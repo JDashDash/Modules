@@ -35,4 +35,32 @@ namespace JDD::Modules::String {
         std::transform(s2.begin(), s2.end(), s2.begin(), ::tolower);
         return s1 == s2;
     }
+
+    bool isEmpty(const std::string& str1) {
+        if (str1.length() > 0) return false;
+        return true;
+    }
+
+    std::string toLowerCase(const std::string& str1) {
+        std::string s1 = str1;
+        std::transform(s1.begin(), s1.end(), s1.begin(), ::tolower);
+        return s1;
+    }
+
+    std::string toUpperCase(const std::string& str1) {
+        std::string s = str1;
+        std::transform(s.begin(), s.end(), s.begin(), [](unsigned char c){ return std::toupper(c); }
+        );
+        return s;
+    }
+
+    std::string replace(const std::string& str1, char x, char y) {
+        std::string s = str1;
+        for (size_t i = 0; i < s.length(); ++i) {
+            if (s[i] == x) {
+                s[i] = y;
+            }
+        }
+        return s;
+    }
 }
