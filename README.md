@@ -17,4 +17,4 @@ The language will use files with the extension .jdd.
 ## Modules
 
 Modules are "utilities" that users can add using the "import" statement (see the language documentation):
-- Modules
+- String
