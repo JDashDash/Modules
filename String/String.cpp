@@ -23,4 +23,16 @@ namespace JDD::Modules::String {
         }
         return str[index];
     }
+
+    bool equals(const std::string& str1, const std::string& str2) {
+        return str1 == str2;
+    }
+
+    bool equalsIgnoreCase(const std::string& str1, const std::string& str2) {
+        std::string s1 = str1;
+        std::string s2 = str2;
+        std::transform(s1.begin(), s1.end(), s1.begin(), ::tolower);
+        std::transform(s2.begin(), s2.end(), s2.begin(), ::tolower);
+        return s1 == s2;
+    }
 }
