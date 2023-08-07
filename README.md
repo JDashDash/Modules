@@ -20,3 +20,4 @@ Modules are "utilities" that users can add using the "import" statement (see the
 - [String](https://github.com/JDashDash/Modules/tree/main/String)
 - [Boolean](https://github.com/JDashDash/Modules/tree/main/Boolean)
 - [Double](https://github.com/JDashDash/Modules/tree/main/Double)
+- [Integer](https://github.com/JDashDash/Modules/tree/main/Integer)
