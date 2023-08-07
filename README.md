@@ -18,3 +18,4 @@ The language will use files with the extension .jdd.
 
 Modules are "utilities" that users can add using the "import" statement (see the language documentation):
 - [String](https://github.com/JDashDash/Modules/tree/main/String)
+- [Boolean](https://github.com/JDashDash/Modules/tree/main/Boolean)
